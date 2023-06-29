@@ -1,0 +1,36 @@
+Test Accuracy Portugal: 0.6666666666666666 
+Test Precision Portugal: 0.4166666666666667 
+Test Recall Portugal: 0.5 
+Test F1 Portugal: 0.4523809523809524 
+Test Accuracy Germany: 0.6153846153846154 
+Test Precision Germany: 0.3 
+Test Recall Germany: 0.4 
+Test F1 Germany: 0.3333333333333333 
+Test Accuracy Switzerland: 0.375 
+Test Precision Switzerland: 0.16666666666666666 
+Test Recall Switzerland: 0.2333333333333333 
+Test F1 Switzerland: 0.1942857142857143 
+Test Accuracy Belgium: 0.375 
+Test Precision Belgium: 0.20833333333333331 
+Test Recall Belgium: 0.29166666666666663 
+Test F1 Belgium: 0.2361111111111111 
+Test Accuracy Spain: 0.7857142857142857 
+Test Precision Spain: 0.6785714285714286 
+Test Recall Spain: 0.6083333333333334 
+Test F1 Spain: 0.6298076923076923 
+Test Accuracy Poland: 0.42857142857142855 
+Test Precision Poland: 0.14285714285714285 
+Test Recall Poland: 0.3333333333333333 
+Test F1 Poland: 0.19999999999999998 
+Test Accuracy France: 0.6363636363636364 
+Test Precision France: 0.6666666666666666 
+Test Recall France: 0.6666666666666666 
+Test F1 France: 0.6428571428571429 
+Test Accuracy Czech Republic: 0.2 
+Test Precision Czech Republic: 0.06666666666666667 
+Test Recall Czech Republic: 0.3333333333333333 
+Test F1 Czech Republic: 0.11111111111111112 
+Overall Accuracy: 0.510337579087579 
+Overall Precision: 0.3308035714285714 
+Overall Recall: 0.4208333333333333 
+Overall F1: 0.34998588217338217 

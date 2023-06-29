@@ -10,7 +10,7 @@ models/*
 *.ipynb_checkpoints/*
 data/df_complete.csv
 #exceptions
-!models/results/*
+!models/results
 
 
 # Byte-compiled / optimized / DLL files
