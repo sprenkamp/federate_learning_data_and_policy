@@ -1,9 +1,7 @@
 # Federated Learning Experiments
-
 This repository contains a series of experiments around federated learning, primarily leveraging BERT for multi-class text classification tasks. Our main script `run.sh` runs a set of experiments: centralized learning, per-country learning, federated learning, and privacy-preserving federated learning.
 
 ## Installation
-
 1. Clone the repository
 ```bash
 git clone https://github.com/sprenkamp/federated_learning_data_and_policy.git
@@ -22,7 +20,6 @@ pip install -r requirements.txt
 ```
 
 ## Running the Experiments
-
 To run the experiments, use the `run.sh` script. Ensure that it has the right permissions.
 
 ```bash
