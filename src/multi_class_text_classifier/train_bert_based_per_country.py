@@ -193,12 +193,10 @@ with open("models/results/results_per_country.txt", "w") as file:
                 true_labels_all.extend(batch_labels_list)
 
             # Calculate average test loss, accuracy, precision, recall, and F1 score
-            # avg_test_loss = total_test_loss / len(test_dataloader)
             accuracy = accuracy_score(true_labels_all, predicted_labels_all)
             precision = precision_score(true_labels_all, predicted_labels_all, average='macro')
             recall = recall_score(true_labels_all, predicted_labels_all, average='macro')
             f1 = f1_score(true_labels_all, predicted_labels_all, average='macro')
-            # file.write(f'Test Loss {country}: {avg_test_loss} \n')
             file.write(f'Test Accuracy {country}: {accuracy} \n')
             file.write(f'Test Precision {country}: {precision} \n')
             file.write(f'Test Recall {country}: {recall} \n')
