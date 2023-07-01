@@ -11,10 +11,7 @@ import random
 # Load df from CSV file
 data="df"
 DF = pd.read_csv(f'data/{data}.csv', on_bad_lines="skip")
-max_length = 512
-DF = DF[DF['x'].str.len() < max_length]
-DF = DF[DF['y']!=-1]
-DF = DF.dropna(subset=['y'])
+
 
 model_name = 'bert-base-multilingual-uncased'
 num_labels = len(DF.y.unique())
@@ -185,40 +182,6 @@ with open("models/results/results_federated_private.txt", "w") as file:
 
             # Load the best model
             model.load_state_dict(best_model)
-
-            # # Evaluate the model on the test set
-            # model.eval()
-            # total_test_loss = 0
-            # total_test_correct = 0
-
-            # with torch.no_grad():
-            #     for batch in test_dataloader:
-            #         input_ids, attention_mask, batch_labels = batch
-            #         input_ids = input_ids.to(device)
-            #         attention_mask = attention_mask.to(device)
-            #         batch_labels = batch_labels.to(device)
-
-            #         outputs = model(
-            #             input_ids=input_ids,
-            #             attention_mask=attention_mask,
-            #             labels=batch_labels
-            #         )
-
-            #         loss = outputs.loss
-            #         logits = outputs.logits
-
-            #         total_test_loss += loss.item()
-
-            #         # Calculate the number of correct predictions
-            #         _, predicted_labels = torch.max(logits, dim=1)
-            #         total_test_correct += torch.sum(predicted_labels == batch_labels).item()
-
-            # # Calculate average test loss and accuracy
-            # avg_test_loss = total_test_loss / len(test_dataloader)
-            # accuracy = total_test_correct / len(test_dataset)
-
-            # # # print(f'Test Loss: {avg_test_loss}')
-            # # file.write(f'Test Accuracy round {fed_round} {country}: {accuracy} \n')
             
             weight_list.append(model.state_dict())
         

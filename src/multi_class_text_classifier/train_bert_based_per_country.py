@@ -10,12 +10,6 @@ from tqdm import tqdm
 # Load df from CSV file
 data="df"
 DF = pd.read_csv(f'data/{data}.csv', on_bad_lines="skip")
-max_length = 512
-DF = DF[DF['x'].str.len() < max_length]
-DF = DF[DF['y']!=-1]
-DF = DF.dropna(subset=['y'])
-
-# print("class distribution", type(df.y.iloc[0]), df.y.value_counts())
 
 with open("models/results/results_per_country.txt", "w") as file:
     overall_accuracy_lst = []

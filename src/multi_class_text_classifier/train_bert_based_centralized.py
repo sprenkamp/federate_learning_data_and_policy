@@ -10,10 +10,7 @@ from tqdm import tqdm
 # Load df from CSV file
 data="df"
 df = pd.read_csv(f'data/{data}.csv', on_bad_lines="skip")
-max_length = 512
-df = df[df['x'].str.len() < max_length]
-df = df[df['y']!=-1]
-df = df.dropna(subset=['y'])
+
 
 
 with open("models/results/results_centralized.txt", "w") as file:
@@ -195,7 +192,6 @@ with open("models/results/results_centralized.txt", "w") as file:
         recall = recall_score(true_labels_all, predicted_labels_all, average='macro')
         f1 = f1_score(true_labels_all, predicted_labels_all, average='macro')
         
-    # file.write(f'Test Loss {country}: {avg_test_loss} \n')
     file.write(f'Test Accuracy: {accuracy} \n')
     file.write(f'Test Precision: {precision} \n')
     file.write(f'Test Recall: {recall} \n')
@@ -203,4 +199,4 @@ with open("models/results/results_centralized.txt", "w") as file:
 
     # Save the fine-tuned model
 model.save_pretrained(f'models/centralized')
-# stokenizer.save_pretrained('models/dummy_centralized')
+
