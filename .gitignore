@@ -8,7 +8,7 @@ plots/*
 models/*
 .vscode/*
 *.ipynb_checkpoints/*
-data/df_complete.csv
+data/
 #exceptions
 !models/results
 

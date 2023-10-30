@@ -1,5 +1,5 @@
 # Federated Learning Experiments
-This repository contains a series of experiments around federated learning, primarily leveraging BERT for multi-class text classification tasks. Our main script `run.sh` runs a set of experiments: centralized learning, per-country learning, federated learning, and privacy-preserving federated learning.
+The repository accompanies our publication in the Data and Policy Journal titled "Overcoming Intergovernmental Data Sharing Challenges with Federated Learning". The repository contains a series of experiments around federated learning, primarily leveraging BERT for multi-class text classification tasks. Our main script `run.sh` runs a set of experiments: centralized learning, per-country learning, federated learning, and privacy-preserving federated learning. Please contact the repo owner to obtain the used dataset, as we do not share it due to privacy and ethical reasons.
 
 ## Installation
 1. Clone the repository
